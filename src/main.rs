@@ -115,7 +115,7 @@ impl Handler for IteHandler {
             _ => {
                 if self.mxdns.is_blocked(self.addr.ip()).unwrap_or(false) {
                     //stat blocked
-                    self.log(format!("blocked {}", self.addr.ip), false);
+                    self.log(&format!("blocked {}", self.addr.ip()), false);
                     Result::Err(Reply::new(550, None, ""))
                 } else {
                     let greet = format!("hello {} from {}", domain, self.addr);
