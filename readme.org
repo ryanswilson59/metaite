@@ -1,0 +1,2 @@
+* About
+This is a simple SMTP server written in rust relying heavily [[https://github.com/zerospam/smtpbis][smtpbis]] that I wrote for another project that needed a customizable smtp server. 
