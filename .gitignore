@@ -1,0 +1,6 @@
+.hg*
+log.log
+target/*
+test.sqlite3
+testcert.key
+testcert.pem
